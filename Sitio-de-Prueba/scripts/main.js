@@ -14,7 +14,7 @@ var miTitulo = document.querySelector('h1');
 
 function estableceNombreUsuario(){
     var miNombre = prompt('Por favor, ingrese su nombre.');
-    if (!miNombre || miNombre === null) {
+    if (!miNombre || miNombre === 'miNombre') {
         estableceNombreUsuario();
     } else {
     localStorage.setItem('nombre', 'miNombre');
